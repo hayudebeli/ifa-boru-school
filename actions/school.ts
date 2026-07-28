@@ -23,6 +23,8 @@ export async function getSchoolInfo() {
           mission: "To provide a holistic, high-quality education in a safe and supportive boarding environment that challenges students to reach their full potential, fosters critical thinking, and instills values of integrity, discipline, and service.",
           missionOm: "Barnoota qulqullina qabu haala mijeessaa fi nageenya qabuun barattootaaf kennuu.",
           introImage: "/school-photos/ifa_building_dorm.jpg",
+          facebook: "https://www.facebook.com/61588790410182/posts/122099072523293013/?app=fbl",
+          telegram: "https://t.me/+Dz7TPl163oFhODY0",
           heroImages: [
             "/school-photos/ifa_group_amphitheater.jpg",
             "/school-photos/ifa_dorm_balcony.jpg",
