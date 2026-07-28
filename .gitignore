@@ -30,8 +30,17 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# env files - keep .env.example but ignore secrets
+.env
+.env.local
+.env.production
+
+# local uploads (use Cloudinary in production)
+/public/uploads/
+
+# prisma dev db
+*.db
+*.db-journal
 
 # vercel
 .vercel
