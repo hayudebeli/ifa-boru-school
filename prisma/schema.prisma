@@ -133,7 +133,7 @@ model Gallery {
 
 model SchoolInformation {
   id          String   @id @default(cuid())
-  name        String   @default("Ifa Boru Special Boarding Secondary School Haramaya")
+  name        String   @default("Haramaya Ifa Boru Special Boarding Secondary School")
   tagline     String?
   address     String?
   phone       String?
@@ -156,13 +156,14 @@ model SchoolInformation {
 }
 
 model StudentStatistics {
-  id             String   @id @default(cuid())
-  totalStudents  Int      @default(0)
-  boys           Int      @default(0)
-  girls          Int      @default(0)
-  teachers       Int      @default(0)
-  staff          Int      @default(0)
-  graduationRate Float    @default(0)
-  yearEstablished Int     @default(2000)
-  updatedAt      DateTime @updatedAt
+  id              String   @id @default(cuid())
+  totalStudents   Int      @default(0)
+  boys            Int      @default(0)
+  girls           Int      @default(0)
+  teachers        Int      @default(0)
+  staff           Int      @default(0)
+  graduationRate  Float    @default(0)
+  yearEstablished Int      @default(2014)
+  resourceRatio   String?  @db.Text
+  updatedAt       DateTime @updatedAt
 }

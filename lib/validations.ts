@@ -67,7 +67,8 @@ export const statisticsSchema = z.object({
   teachers: z.number().min(0),
   staff: z.number().min(0),
   graduationRate: z.number().min(0).max(100),
-  yearEstablished: z.number().min(1900).max(new Date().getFullYear()),
+  yearEstablished: z.number().min(1900).max(9999),
+  resourceRatio: z.string().optional(),
 });
 
 export const loginSchema = z.object({

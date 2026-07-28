@@ -17,7 +17,8 @@ export async function getStatistics() {
           teachers: 85,
           staff: 40,
           graduationRate: 94.5,
-          yearEstablished: 1998,
+          yearEstablished: 2014,
+          resourceRatio: "1 teacher for every 14 students — ensuring personalized attention and quality learning outcomes.",
         },
       });
     }

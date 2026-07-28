@@ -15,6 +15,7 @@ interface StatItem {
   staff: number;
   graduationRate: number;
   yearEstablished: number;
+  resourceRatio?: string | null;
 }
 
 export default function StatisticsManager({ initialData }: { initialData: StatItem | null }) {
@@ -26,8 +27,9 @@ export default function StatisticsManager({ initialData }: { initialData: StatIt
     girls: initialData?.girls ?? 550,
     teachers: initialData?.teachers ?? 85,
     staff: initialData?.staff ?? 40,
-    graduationRate: initialData?.graduationRate ?? 95,
-    yearEstablished: initialData?.yearEstablished ?? 1998,
+    graduationRate: initialData?.graduationRate ?? 94.5,
+    yearEstablished: initialData?.yearEstablished ?? 2014,
+    resourceRatio: initialData?.resourceRatio ?? "1 teacher for every 14 students — ensuring personalized attention and quality learning outcomes.",
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -42,6 +44,7 @@ export default function StatisticsManager({ initialData }: { initialData: StatIt
       staff: Number(formData.staff),
       graduationRate: Number(formData.graduationRate),
       yearEstablished: Number(formData.yearEstablished),
+      resourceRatio: formData.resourceRatio || "",
     });
     setLoading(false);
 
@@ -140,7 +143,9 @@ export default function StatisticsManager({ initialData }: { initialData: StatIt
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Year Established</label>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Year Established
+                <span className="text-xs text-gray-400 ml-1 font-normal">(Ethiopian Calendar)</span>
+              </label>
               <input
                 type="number"
                 required
@@ -150,6 +155,20 @@ export default function StatisticsManager({ initialData }: { initialData: StatIt
               />
             </div>
           </div>
+        </div>
+
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 space-y-4">
+          <h2 className="text-base font-bold text-gray-900 border-b border-gray-100 pb-3 flex items-center gap-2">
+            <BarChart2 className="w-5 h-5 text-[#1a3a8f]" /> Resource & Ratio Description
+          </h2>
+          <p className="text-xs text-gray-500">Describe the teacher-to-student ratio and available resources. This appears on the public statistics page.</p>
+          <textarea
+            rows={4}
+            value={formData.resourceRatio ?? ""}
+            onChange={(e) => setFormData((p) => ({ ...p, resourceRatio: e.target.value }))}
+            placeholder="e.g. 1 teacher for every 14 students — ensuring personalized attention and quality learning outcomes."
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm outline-none focus:border-[#1a3a8f] resize-none"
+          />
         </div>
 
         <div className="flex justify-end">
