@@ -13,7 +13,7 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "Welcome to Ifa Boru Special Boarding Secondary School Haramaya — Excellence in Education, Character, and Community.",
+    "Welcome to Haramaya Ifa Boru Special Boarding Secondary School — Excellence in Education, Character, and Community.",
 };
 
 export default async function HomePage() {

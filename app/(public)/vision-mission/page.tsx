@@ -7,7 +7,7 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Vision & Mission",
   description:
-    "The vision and mission of Ifa Boru Special Boarding Secondary School Haramaya — guiding our commitment to excellence.",
+    "The vision and mission of Haramaya Ifa Boru Special Boarding Secondary School — guiding our commitment to excellence.",
 };
 
 export default async function VisionMissionPage() {

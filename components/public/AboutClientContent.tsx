@@ -14,7 +14,7 @@ export default function AboutClientContent({ schoolInfo, statistics }: AboutClie
 
   const aboutText = language === "om"
     ? (schoolInfo?.aboutOm || schoolInfo?.about || "Mana Barumsa Sadarkaa 2ffaa Addaa Bultii Ifa Boruu Haramayaatti magaalaa Haramayaa, Oromiyaa, Itoophiyaatti kan argamudha. Barnoota qulqullina qabu kennuudhaan barattoota keenya guddina barnootaa fi amala cimaatiin ijaaruuf kutannoodhaan hojjenna.")
-    : (schoolInfo?.about || "Ifa Boru Special Boarding Secondary School is a premier educational institution located in Haramaya, Oromia, Ethiopia. We are committed to providing quality education that empowers students to excel academically, develop strong character, and contribute positively to their communities.");
+    : (schoolInfo?.about || "Haramaya Ifa Boru Special Boarding Secondary School is a premier educational institution located in Haramaya, Oromia, Ethiopia. We are committed to providing quality education that empowers students to excel academically, develop strong character, and contribute positively to their communities.");
 
   const visionText = language === "om"
     ? (schoolInfo?.visionOm || schoolInfo?.vision || "Mana barumsa sadarkaa 2ffaa addaa barnoota olaanaa, hoogganummaa fi guddina amalaatiif Haramayaa, Oromiyaatti tajaajilu ta'uu.")

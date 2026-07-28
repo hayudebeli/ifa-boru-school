@@ -7,7 +7,7 @@ export const revalidate = 1800;
 
 export const metadata: Metadata = {
   title: "News",
-  description: "Latest news and updates from Ifa Boru Special Boarding Secondary School Haramaya.",
+  description: "Latest news and updates from Haramaya Ifa Boru Special Boarding Secondary School.",
 };
 
 export default async function NewsPage() {

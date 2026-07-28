@@ -10,12 +10,13 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Ifa Boru Special Boarding Secondary School Haramaya",
-    template: "%s | Ifa Boru Boarding School",
+    default: "Haramaya Ifa Boru Special Boarding Secondary School",
+    template: "%s | Haramaya Ifa Boru Boarding School",
   },
   description:
-    "Ifa Boru Special Boarding Secondary School Haramaya — Excellence in Education, Character, and Community since 1998.",
+    "Haramaya Ifa Boru Special Boarding Secondary School — Excellence in Education, Character, and Community since 2014 EC.",
   keywords: [
+    "Haramaya Ifa Boru",
     "Ifa Boru",
     "boarding school",
     "secondary school",
@@ -24,20 +25,20 @@ export const metadata: Metadata = {
     "education",
     "Oromia",
   ],
-  authors: [{ name: "Ifa Boru Boarding School" }],
-  creator: "Ifa Boru Boarding School",
+  authors: [{ name: "Haramaya Ifa Boru Boarding School" }],
+  creator: "Haramaya Ifa Boru Boarding School",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: process.env.NEXT_PUBLIC_APP_URL,
-    siteName: "Ifa Boru Special Boarding Secondary School",
-    title: "Ifa Boru Special Boarding Secondary School Haramaya",
+    siteName: "Haramaya Ifa Boru Special Boarding Secondary School",
+    title: "Haramaya Ifa Boru Special Boarding Secondary School",
     description:
       "Excellence in Education, Character, and Community — Haramaya, Ethiopia",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ifa Boru Special Boarding Secondary School Haramaya",
+    title: "Haramaya Ifa Boru Special Boarding Secondary School",
     description: "Excellence in Education, Character, and Community",
   },
   robots: {

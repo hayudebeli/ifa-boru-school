@@ -18,11 +18,11 @@ export const translations = {
     navContact: "Contact",
 
     // Hero Section
-    schoolBadge: "Ifa Boru Special Boarding Secondary School",
+    schoolBadge: "Haramaya Ifa Boru Special Boarding Secondary School",
     heroTitle1: "Excellence in Education",
-    heroSub1: "Shaping Tomorrow's Leaders Today at Ifa Boru Boarding School",
+    heroSub1: "Shaping Tomorrow's Leaders Today at Haramaya Ifa Boru Boarding School",
     heroTitle2: "A Community of Achievers",
-    heroSub2: "Join hundreds of students thriving at Ifa Boru Boarding School Haramaya",
+    heroSub2: "Join hundreds of students thriving at Haramaya Ifa Boru Boarding School",
     heroTitle3: "World-Class Boarding Experience",
     heroSub3: "Safe, nurturing environment for holistic academic & personal growth",
     btnLearnMore: "Learn More",
@@ -38,7 +38,7 @@ export const translations = {
 
     // Homepage Sections
     welcomeBadge: "Welcome to",
-    welcomeTitle: "Ifa Boru Special Boarding Secondary School",
+    welcomeTitle: "Haramaya Ifa Boru Special Boarding Secondary School",
     readMore: "Read More",
     sectionNews: "Latest News",
     sectionAchievements: "Recent Achievements",
@@ -46,7 +46,7 @@ export const translations = {
     sectionAnnouncements: "Announcements",
     sectionJobs: "Job Vacancies",
     sectionStats: "Student Statistics",
-    statsSub: "Academic year overview — Ifa Boru Special Boarding Secondary School",
+    statsSub: "Academic year overview — Haramaya Ifa Boru Special Boarding Secondary School",
     sectionGallery: "Photo Gallery",
     viewAll: "View all",
     viewAllPhotos: "View all photos",
@@ -69,7 +69,7 @@ export const translations = {
     footerAboutText: "A premier boarding secondary school dedicated to academic excellence, leadership, and character development in Haramaya, Oromia.",
     footerQuickLinks: "Quick Links",
     footerContactUs: "Contact Us",
-    footerRights: "Ifa Boru Special Boarding Secondary School Haramaya. All rights reserved.",
+    footerRights: "Haramaya Ifa Boru Special Boarding Secondary School. All rights reserved.",
   },
 
   om: {

@@ -8,7 +8,7 @@ export const revalidate = 1800;
 
 export const metadata: Metadata = {
   title: "Job Vacancies",
-  description: "Current job openings at Ifa Boru Special Boarding Secondary School Haramaya. Apply to join our team.",
+  description: "Current job openings at Haramaya Ifa Boru Special Boarding Secondary School. Apply to join our team.",
 };
 
 export default async function JobsPage() {

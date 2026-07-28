@@ -56,7 +56,7 @@ export default function SchoolInfoForm({ initialData }: { initialData: any }) {
   } = useForm<SchoolInfoFormData>({
     resolver: zodResolver(schoolInfoSchema),
     defaultValues: {
-      name: initialData?.name || "Ifa Boru Special Boarding Secondary School Haramaya",
+      name: initialData?.name || "Haramaya Ifa Boru Special Boarding Secondary School",
       tagline: initialData?.tagline || "",
       address: initialData?.address || "",
       phone: initialData?.phone || "",

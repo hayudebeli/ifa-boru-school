@@ -7,7 +7,7 @@ export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Achievements",
-  description: "Celebrating the outstanding achievements of Ifa Boru Special Boarding Secondary School Haramaya students and staff.",
+  description: "Celebrating the outstanding achievements of Haramaya Ifa Boru Special Boarding Secondary School students and staff.",
 };
 
 export default async function AchievementsPage() {

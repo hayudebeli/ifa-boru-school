@@ -11,12 +11,12 @@ export async function getSchoolInfo() {
     if (!info) {
       info = await db.schoolInformation.create({
         data: {
-          name: "Ifa Boru Special Boarding Secondary School Haramaya",
+          name: "Haramaya Ifa Boru Special Boarding Secondary School",
           tagline: "Excellence in Education, Character, and Community",
           address: "Haramaya, Oromia, Ethiopia",
           phone: "+251 25 XXX XXXX",
           email: "info@ifaboru.edu.et",
-          about: "Ifa Boru Special Boarding Secondary School is a premier educational institution located in Haramaya, Oromia, Ethiopia. We are committed to providing quality education that empowers students to excel academically, develop strong character, and contribute positively to their communities.",
+          about: "Haramaya Ifa Boru Special Boarding Secondary School is a premier educational institution located in Haramaya, Oromia, Ethiopia. We are committed to providing quality education that empowers students to excel academically, develop strong character, and contribute positively to their communities.",
           aboutOm: "Mana Barumsa Sadarkaa 2ffaa Addaa Bultii Ifa Boruu Haramayaatti magaalaa Haramayaa, Oromiyaa, Itoophiyaatti kan argamudha. Barnoota qulqullina qabu kennuudhaan barattoota keenya guddina barnootaa fi amala cimaatiin ijaaruuf kutannoodhaan hojjenna.",
           vision: "To be a leading center of excellence in secondary education, nurturing well-rounded individuals who are academically distinguished, morally upright, and socially responsible.",
           visionOm: "Mana barumsa sadarkaa 2ffaa addaa barnoota olaanaa, hoogganummaa fi guddina amalaatiif Haramayaa, Oromiyaatti tajaajilu ta'uu.",

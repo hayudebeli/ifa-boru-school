@@ -7,7 +7,7 @@ export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Get in touch with Ifa Boru Special Boarding Secondary School Haramaya.",
+  description: "Get in touch with Haramaya Ifa Boru Special Boarding Secondary School.",
 };
 
 export default async function ContactPage() {

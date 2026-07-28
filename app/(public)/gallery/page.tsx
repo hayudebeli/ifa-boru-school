@@ -7,7 +7,7 @@ export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Gallery",
-  description: "Photo gallery of Ifa Boru Special Boarding Secondary School Haramaya.",
+  description: "Photo gallery of Haramaya Ifa Boru Special Boarding Secondary School.",
 };
 
 export default async function GalleryPage() {

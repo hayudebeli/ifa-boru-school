@@ -11,11 +11,11 @@ async function main() {
     update: {},
     create: {
       id: "default_school_info",
-      name: "Ifa Boru Special Boarding Secondary School",
+      name: "Haramaya Ifa Boru Special Boarding Secondary School",
       address: "Haramaya, Oromia, Ethiopia",
       phone: "+251 911 234 567",
       email: "info@ifaboru.edu.et",
-      about: "Ifa Boru Special Boarding Secondary School is a premier educational institution...",
+      about: "Haramaya Ifa Boru Special Boarding Secondary School is a premier educational institution...",
       vision: "To be a leading center of excellence in secondary education...",
       mission: "To provide a holistic, high-quality education in a safe and supportive boarding environment...",
     }
