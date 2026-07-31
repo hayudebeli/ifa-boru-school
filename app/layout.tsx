@@ -15,9 +15,11 @@ export const metadata: Metadata = {
   },
   description:
     "Haramaya Ifa Boru Special Boarding Secondary School — Excellence in Education, Character, and Community since 2014 EC.",
+
   keywords: [
     "Haramaya Ifa Boru",
-    "Ifa Boru",
+    "Ifa Boru School",
+    "Haramaya Ifa Boru Special Boarding Secondary School",
     "boarding school",
     "secondary school",
     "Haramaya",
@@ -25,33 +27,56 @@ export const metadata: Metadata = {
     "education",
     "Oromia",
   ],
-  authors: [{ name: "Haramaya Ifa Boru Boarding School" }],
-  creator: "Haramaya Ifa Boru Boarding School",
+
+  authors: [
+    {
+      name: "Haramaya Ifa Boru Special Boarding Secondary School",
+    },
+  ],
+
+  creator: "Haramaya Ifa Boru Special Boarding Secondary School",
+
+  metadataBase: new URL("https://haramayaifaboruschool.xyz"),
+
+  alternates: {
+    canonical: "https://haramayaifaboruschool.xyz",
+  },
+
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: process.env.NEXT_PUBLIC_APP_URL,
+    url: "https://haramayaifaboruschool.xyz",
     siteName: "Haramaya Ifa Boru Special Boarding Secondary School",
     title: "Haramaya Ifa Boru Special Boarding Secondary School",
     description:
       "Excellence in Education, Character, and Community — Haramaya, Ethiopia",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Haramaya Ifa Boru Special Boarding Secondary School",
-    description: "Excellence in Education, Character, and Community",
+    description:
+      "Excellence in Education, Character, and Community — Haramaya, Ethiopia",
   },
+
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en" className={inter.variable}>
       <body className="min-h-screen bg-white font-sans antialiased">
