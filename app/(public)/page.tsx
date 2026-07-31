@@ -8,7 +8,7 @@ import { getAllAnnouncements } from "@/actions/announcements";
 import { getAllGallery } from "@/actions/gallery";
 import HomeClientContent from "@/components/public/HomeClientContent";
 
-export const revalidate = 3600;
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -17,16 +17,23 @@ export const metadata: Metadata = {
 };
 
 export default async function HomePage() {
-  const [news, achievements, openJobs, statistics, schoolInfo, announcements, gallery] =
-    await Promise.all([
-      getAllNews({ status: "PUBLISHED", limit: 6 }),
-      getAllAchievements(3),
-      getOpenJobs(4),
-      getStatistics(),
-      getSchoolInfo(),
-      getAllAnnouncements(true),
-      getAllGallery(),
-    ]);
+  const [
+    news,
+    achievements,
+    openJobs,
+    statistics,
+    schoolInfo,
+    announcements,
+    gallery,
+  ] = await Promise.all([
+    getAllNews({ status: "PUBLISHED", limit: 6 }),
+    getAllAchievements(3),
+    getOpenJobs(4),
+    getStatistics(),
+    getSchoolInfo(),
+    getAllAnnouncements(true),
+    getAllGallery(),
+  ]);
 
   return (
     <HomeClientContent
