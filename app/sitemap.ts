@@ -1,6 +1,8 @@
 import { MetadataRoute } from "next";
 import { getAllNews } from "@/actions/news";
 
+export const dynamic = "force-dynamic";
+
 const BASE_URL = "https://haramayaifaboruschool.xyz";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -22,7 +24,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly",
       priority: 1,
     },
-
     ...newsUrls,
   ];
 }
