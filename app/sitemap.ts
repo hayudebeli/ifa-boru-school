@@ -1,7 +1,8 @@
 import { MetadataRoute } from "next";
 import { getAllNews } from "@/actions/news";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
+export const revalidate = 1;
 
 const BASE_URL = "https://haramayaifaboruschool.xyz";
 
