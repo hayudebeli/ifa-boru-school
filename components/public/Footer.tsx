@@ -138,7 +138,7 @@ export default function Footer({ schoolInfo }: { schoolInfo?: any }) {
             &copy; {currentYear} {t("footerRights")}
           </p>
           <p className="text-gray-500 text-xs">
-            {language === "om" ? "Barnoota Olaanaa Bara 1998 irraa eegalee" : "Excellence in Education since 1998"}
+            {language === "om" ? "Barnoota Olaanaa Bara 2014 irraa eegalee" : "Excellence in Education since 2014 EC / 2022 GC"}
           </p>
         </div>
       </div>
